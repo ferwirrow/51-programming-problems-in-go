@@ -3,5 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, 世界")
+	var name string
+
+	fmt.Println("What is your name? ")
+	fmt.Scanln(&name)
+	output := fmt.Sprintf("Hello, %s, nice to meet you!", name)
+
+	fmt.Println(output)
+
 }
